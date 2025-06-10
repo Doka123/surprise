@@ -1,0 +1,70 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fef6ff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 50px 20px;
+  transition: transform 0.1s;
+}
+
+.botoes {
+  margin: 20px;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(255, 105, 180, 0.3);
+  transition: transform 0.2s, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff85c1;
+  transform: scale(1.05);
+}
+
+.caixinha {
+  display: none;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+  background-color: #fff0f5;
+  font-size: 1.3em;
+  color: #d63384;
+}
+
+.fofinha img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.erro-escondido {
+  font-weight: bold;
+  background-color: #ffe6e6;
+  color: red;
+}
+
+.tremor {
+  animation: tremer 0.1s infinite;
+}
+
+@keyframes tremer {
+  0% { transform: translate(2px, 2px); }
+  25% { transform: translate(-2px, 2px); }
+  50% { transform: translate(2px, -2px); }
+  75% { transform: translate(-2px, -2px); }
+  100% { transform: translate(2px, 2px); }
+}
